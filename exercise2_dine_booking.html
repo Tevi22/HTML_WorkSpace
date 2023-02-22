@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dine Booking</title>
+    </head>
+    <body>
+        <p>
+            <center>Dine Booking</center>
+        </p>
+        <br>
+        <center>
+        <form method="post">
+            Visitor Name:
+            <input type="text" id="visistorname" maxlength="20" autofocus>
+            <br><br>
+            Number of members:
+            <input type="number" id="nomembers" maxlength="99">
+            <br><br>
+            Contact No:
+            <input type="number" maxlength="10" minlength="10" pattern="[0-9]">
+            <br><br>
+            Email:
+            <input type="email" id="email">
+            <br><br>
+            Type of Food:
+            <input type="checkbox" checked>South Indian
+            <input type="checkbox">North Indian
+            <input type="checkbox">Chinese
+            <input type="checkbox">Western
+            <br><br>
+            Room Status:
+            <input type="radio" checked>AC
+            <input type="radio">Non-AC 
+            <br><br>
+            Venue Preference:
+            <select type="dropdown list" id="venues">
+                <option selected>--SELECT--</option>
+                <option>Arena</option>
+                <option>Fiesta</option>
+                <option>Vista</option>
+                <option>Mythri</option>
+                <option>Magna</option>
+                <option>Oasis</option>
+                <option disabled>Amoba</option>
+            </select>
+            <br><br>
+            <span>
+                <button type="submit" id="book">Book</button>
+                <button type="reset" id="reset">Reset</button>
+            </span>    
+        </form>
+        </center>
+    </body>
+</html>

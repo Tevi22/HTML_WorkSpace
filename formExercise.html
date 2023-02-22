@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Special Input Types Demo</title>
+</head>
+<body>
+<h3><center>Customer Registration</center></h3><br><br>
+<center><form name="custForm"> 
+	 User Name	: <input type="text" id="Username" autofocus maxlength="15" pattern="[A-Za-z]">    <br><br><!-- focus is here when page is loaded) -->
+     Password 	: <input type="text" id="password" minlength="8" maxlength="12" pattern="[A-Za-z]+[0-9]" required>   <br><br>	<!-- password should contain alphabets imposed using pattern attribute -->
+	 Email	:    <input type="text" size="30" autocomplete="on" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" > <br><br>  <!-- autocomplete provides auto fill feature when set to 'on' -->
+	 Gender:<!-- radio buttons-->
+     <input type="radio" value="male" required name="gender">Male
+     <input type="radio" value="female" required name="gender">Female
+     <input type="radio" value="other" required name="gender">Other
+     <br><br>
+	 Age (Yrs)	: <input type="number" id="age" valuemin="12" valuemax="60">    <br><br>	<!-- required attribute : Age is necessary -->
+	 Address: <textarea id="textarea" rows="4" cols="20"></textarea>  <br><br>
+ 	 Company website: <input type="url" id="companywebsite">    <br><br>
+	 Choose country: 
+     <select>
+        <option>India</option>
+        <option>United States</option>
+        <option>Germany</option>
+        <option>Japan</option>
+     </select>
+	 <br><br>
+	  Date of Journey: <input type="date" id="date" placeholder="mm/dd/yyy">
+<br><br>
+<span>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</span>
+</form>
+</center>
+</body>
+</html>
