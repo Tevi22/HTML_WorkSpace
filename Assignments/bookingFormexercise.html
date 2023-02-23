@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Booking Form</title>
+    </head>
+    <body>
+        <center>
+            <form method="post">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th colspan="2">XYZ Online Delivery</th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Personal Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>First Name</td>
+                            <td><input type="text" id="firstname" required maxlength="20"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number</td>
+                            <td><input type="number" id="phonenumber" minlength="10" maxlength="10" required></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Order Perference</th>
+                        </tr>
+                        <tr>
+                            <td>Size</td>
+                            <td required>
+                                <input type="radio" value="small" name="size">Small
+                                <input type="radio" value="medium" name="size">Medium
+                                <input type="radio" value="large" name="size">Large
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Base</td>
+                            <td>
+                                <select required>
+                                    <option>Pan Pizza</option>
+                                    <option>Cheese Crust</option>
+                                    <option>Chicken Stuffed Crust</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Toppings</td>
+                            <td>
+                                <input type="checkbox" id="toppings">Cheese
+                                <input type="checkbox" id="toppings">Olives
+                                <input type="checkbox" id="toppings">Tomatoes
+                                <input type="checkbox" id="toppings">Capsicum
+                                <input type="checkbox" id="toppings">Jalapenos
+                                <input type="checkbox" id="toppings">Mushrooms
+                                <input type="checkbox" id="toppings">Pepperoni
+                                <input type="checkbox" id="toppings">Onion
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Additional details</td>
+                            <td>
+                                <textarea type="text" rows="2" cols="30">
+
+                                </textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Conform details and proceed to pay?
+                                <input type="radio" value="yes" name="confirm">Yes
+                                <input type="radio" value="no" name="confirm">No
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <button>Submit</button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </center>
+    </body>
+</html>
